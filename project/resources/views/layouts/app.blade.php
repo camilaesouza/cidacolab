@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2013/07/12/19/18/world-154527_1280.png" type="image/x-icon"/>
+    <title>CidaColab</title>
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
@@ -17,10 +18,11 @@
 <body>
     <div id="app">
         @include('layouts.flash-messages')
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'Laravel') }}
+                <img width="30" src="https://cdn.pixabay.com/photo/2013/07/12/19/18/world-154527_1280.png" alt="cidacolab">
+                <a class="navbar-brand ml-2" href="{{ url('/') }}">
+                {{ config('app.name', 'CidaColab') }}
             </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -60,7 +62,7 @@
 
         @yield('custom-template')
 
-        <div class="container pt-3">
+        <div class="container">
             @include('layouts.breadcrumb')
             @yield('content')
         </div>
@@ -72,6 +74,12 @@
     <script src="{{ mix('js/app.js') }}"></script>
 
     @yield('footer')
+
+    <footer class="text-center text-white mt-5" style="background-color: #f1f1f1;">
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright: CidaColab
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -5,12 +5,11 @@
     <div class="row justify-content-md-center mt-5">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Login</div>
                 <div class="card-body">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
-                        <div class="form-group row">
+                        <div class="form-group row mt-4">
                             <label for="email" class="col-lg-4 col-form-label text-lg-right">E-Mail Address</label>
 
                             <div class="col-lg-6">

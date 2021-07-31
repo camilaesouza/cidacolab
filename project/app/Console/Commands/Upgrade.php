@@ -92,7 +92,7 @@ class Upgrade extends Command
         ];
         $this->executeWithMessages(
             'db:seed',
-            ['--class' => 'UpgradeSeeder', '--force' => true],
+            ['--class' => 'DatabaseSeeder', '--force' => true],
             $seedMessages
         );
     }
