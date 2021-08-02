@@ -3,7 +3,7 @@
         <slot name="options">
         </slot>
 
-        <table class="col-12">
+        <table class="col-12 table table-striped">
             <thead>
                 <slot name="header" :orderBy="orderBy"></slot>
             </thead>

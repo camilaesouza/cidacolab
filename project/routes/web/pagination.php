@@ -6,3 +6,4 @@
  */
 
 Route::get('users', 'UserController@pagination')->name('pagination.users');
+Route::get('complaints', 'ComplaintsController@pagination')->name('pagination.complaints');

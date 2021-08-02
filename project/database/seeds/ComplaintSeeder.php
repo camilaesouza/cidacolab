@@ -11,7 +11,7 @@ class ComplaintSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('complaints')->insert([
+        DB::table('complaints')->insertOrIgnore([
             'name' => 'Reclamação teste',
             'address' => 'Teste cidade',
             'city' => 'Cidade teste',

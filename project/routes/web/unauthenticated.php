@@ -5,6 +5,6 @@
 
 Auth::routes();
 
-Route::get('/', 'WelcomeController');
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/complaints', 'ComplaintsController@index');

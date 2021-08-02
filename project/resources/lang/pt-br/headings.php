@@ -6,6 +6,11 @@ return [
      * Cabeçalhos com nome genérico devem começar com underline.
      */
 
+    'common' => [
+        'name' => 'Nome',
+        'description' => 'Descrição',
+    ],
+
     '_home' => 'Home',
     '_users' => 'Usuários',
 

@@ -18,7 +18,7 @@
 <body>
     <div id="app">
         @include('layouts.flash-messages')
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <img width="30" src="https://cdn.pixabay.com/photo/2013/07/12/19/18/world-154527_1280.png" alt="cidacolab">
                 <a class="navbar-brand ml-2" href="{{ url('/') }}">
@@ -62,8 +62,9 @@
 
         @yield('custom-template')
 
-        <div class="container">
-            @include('layouts.breadcrumb')
+        <div class="container pt-3 pb-4">
+                @include('layouts.breadcrumb')
+
             @yield('content')
         </div>
     </div>
@@ -74,12 +75,5 @@
     <script src="{{ mix('js/app.js') }}"></script>
 
     @yield('footer')
-
-    <footer class="text-center text-white mt-5" style="background-color: #f1f1f1;">
-        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2021 Copyright: CidaColab
-        </div>
-    </footer>
 </body>
-
 </html>
