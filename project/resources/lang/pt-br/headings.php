@@ -9,6 +9,7 @@ return [
     'common' => [
         'name' => 'Nome',
         'description' => 'Descrição',
+        'home' => 'Início',
     ],
 
     '_home' => 'Home',

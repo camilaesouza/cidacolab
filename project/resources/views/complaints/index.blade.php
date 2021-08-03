@@ -13,38 +13,42 @@
 @endsection
 
 @section('content')
-    <div class="row mt-3">
-        <div class="col-md-12">
-            <data-list data-source="{{ route('pagination.complaints') }}">
-                <template #options>
-                    <div class="row my-2">
-                        <div class="col-9">
-                            <filter-text url-key="query"
-                                         class="col-12 form-control"
-                                         placeholder="Buscar...">
-                            </filter-text>
+    <div class="card shadow-lg">
+        <div class="card-body">
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <data-list data-source="{{ route('pagination.complaints') }}">
+                    <template #options>
+                        <div class="row my-2">
+                            <div class="col-9">
+                                <filter-text url-key="query"
+                                             class="col-12 form-control"
+                                             placeholder="Buscar...">
+                                </filter-text>
+                            </div>
+
+                            <div class="col-3">
+                                <a :href="'{{ route('users.create') }}'">
+                                    <button class="btn btn-primary btn-block">Novo usuário</button>
+                                </a>
+                            </div>
                         </div>
+                    </template>
 
-                        <div class="col-3">
-                            <a :href="'{{ route('users.create') }}'">
-                                <button class="btn btn-primary">Novo usuário</button>
-                            </a>
-                        </div>
-                    </div>
-                </template>
+                    <template #header="{orderBy}">
+                        <tr>
+                            @include('complaints.partials._head')
+                        </tr>
+                    </template>
 
-                <template #header="{orderBy}">
-                    <tr>
-                        @include('complaints.partials._head')
-                    </tr>
-                </template>
-
-                <template #body="{fetchData, items}">
-                    <tr v-for="(item, index) in items" :key="index">
-                        @include('complaints.partials._body')
-                    </tr>
-                </template>
-            </data-list>
+                    <template #body="{fetchData, items}">
+                        <tr v-for="(item, index) in items" :key="index">
+                            @include('complaints.partials._body')
+                        </tr>
+                    </template>
+                </data-list>
+            </div>
+        </div>
         </div>
     </div>
 @endsection

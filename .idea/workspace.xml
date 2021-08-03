@@ -21,29 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="7d0e81b4-060b-496e-b1ed-785b39e2346b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/ComplaintsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Http/Controllers/ComplaintsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/app/Models/Complaint.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Models/Complaint.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/bootstrap/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/project/bootstrap/cache/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/seeds/ComplaintSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/database/seeds/ComplaintSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/seeds/UsersSedder.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/database/seeds/UsersSedder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/js/Components/DataList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/js/Components/DataList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/js/Components/Breadcrumb.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/js/Components/Breadcrumb.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/resources/lang/pt-br/headings.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/lang/pt-br/headings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/complaints/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/complaints/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/routes/web/authenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/routes/web/authenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/routes/web/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/routes/web/pagination.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/routes/web/unauthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/routes/web/unauthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/project/storage/app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/app/public/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/project/storage/app/public/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/debugbar/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/project/storage/debugbar/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/framework/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/project/storage/framework/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/framework/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/project/storage/framework/cache/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/framework/cache/data/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/project/storage/framework/cache/data/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/framework/sessions/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/project/storage/framework/sessions/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/framework/testing/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/project/storage/framework/testing/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/framework/views/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/project/storage/framework/views/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/logs/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/project/storage/logs/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/shared/partials/_buttons_actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/shared/partials/_buttons_actions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/users/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/users/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +210,7 @@
       <workItem from="1627473358805" duration="419000" />
       <workItem from="1627746928522" duration="9676000" />
       <workItem from="1627904966651" duration="29000" />
-      <workItem from="1627941373476" duration="5380000" />
+      <workItem from="1627941373476" duration="9295000" />
     </task>
     <servers />
   </component>
@@ -261,9 +250,9 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="247" y="74" width="990" height="579" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1627749502663" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1627942189083">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1627950335548">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1627942189083" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1627950335548" />
   </component>
 </project>

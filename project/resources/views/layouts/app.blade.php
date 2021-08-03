@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="https://cdn.pixabay.com/photo/2013/07/12/19/18/world-154527_1280.png" type="image/x-icon"/>
+    <link rel="icon" href="https://imagensemoldes.com.br/wp-content/uploads/2020/06/Imagem-Megafone-PNG.png" type="image/x-icon"/>
     <title>CidaColab</title>
 
     <!-- Styles -->
@@ -15,12 +15,12 @@
     @yield('header')
 </head>
 
-<body>
+<body style="background-color: #f5f5f5">
     <div id="app">
         @include('layouts.flash-messages')
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <img width="30" src="https://cdn.pixabay.com/photo/2013/07/12/19/18/world-154527_1280.png" alt="cidacolab">
+                <img width="50" src="https://imagensemoldes.com.br/wp-content/uploads/2020/06/Imagem-Megafone-PNG.png" alt="cidacolab">
                 <a class="navbar-brand ml-2" href="{{ url('/') }}">
                 {{ config('app.name', 'CidaColab') }}
             </a>
@@ -62,7 +62,7 @@
 
         @yield('custom-template')
 
-        <div class="container pt-3 pb-4">
+        <div class="container-fluid pt-3 pl-5 pr-5 pb-5">
                 @include('layouts.breadcrumb')
 
             @yield('content')

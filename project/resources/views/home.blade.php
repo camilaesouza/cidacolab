@@ -40,7 +40,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="https://omd.com.br/wp-content/uploads/2019/08/2019-AGOSTO-1-IMAGEM.png" class="card-img-top" alt="...">
+                            <img src="https://img.flaticon.com/icons/png/512/174/174240.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Faça suas proprias denuncias</h5>
                                 <p class="card-text">Cadastre suas proprias denuncias pelo nosso sistema!</p>

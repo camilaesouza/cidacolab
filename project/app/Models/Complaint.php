@@ -12,7 +12,7 @@ class Complaint extends Model
     use SearchScope;
 
     protected $searchBy = [
-        'name'
+        'name',
     ];
 
     protected $fillable = [
@@ -21,5 +21,9 @@ class Complaint extends Model
         'address',
         'longitude',
         'latitude',
+    ];
+
+    protected static $logAttributes = [
+        'name',
     ];
 }
