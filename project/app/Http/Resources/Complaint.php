@@ -19,7 +19,6 @@ class Complaint extends JsonResource
             'description' => $this->description,
 
             'links' => [
-                'edit' => $this->when(true, route('complaints.edit', $this->id)),
                 'show' => $this->when(true, route('complaints.show', $this->id)),
                 'destroy' => $this->when(true, route('complaints.destroy', $this->id)),
             ],

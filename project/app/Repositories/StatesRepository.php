@@ -1,15 +1,16 @@
 <?php
+
 namespace App\Repositories;
 
-use App\Models\Complaint;
+use App\Models\State;
 use App\Traits\Newable;
 
-class ComplaintRepository extends Repository
+class StatesRepository extends Repository
 {
     use Newable;
 
     protected function getClass()
     {
-        return Complaint::class;
+        return State::class;
     }
 }

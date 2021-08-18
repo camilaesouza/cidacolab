@@ -13,10 +13,7 @@ class ComplaintSeeder extends Seeder
     {
         DB::table('complaints')->insertOrIgnore([
             'name' => 'Reclamação teste',
-            'address' => 'Teste cidade',
-            'city' => 'Cidade teste',
-            'state' => 'PR',
-            'hours' => '9:00am-6:00pm',
+            'description' => "Apenas uma descrição para teste",
             'latitude' => 28.452763,
             'longitude' => -81.412228,
         ]);

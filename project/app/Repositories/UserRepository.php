@@ -2,9 +2,12 @@
 namespace App\Repositories;
 
 use App\Models\User;
+use App\Traits\Newable;
 
 class UserRepository extends Repository
 {
+    use Newable;
+
     protected function getClass()
     {
         return User::class;

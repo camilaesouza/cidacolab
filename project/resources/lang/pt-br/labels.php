@@ -5,5 +5,10 @@
      */
 
     return [
-        //
+        'not_defined' => 'Não definido',
+
+        'complaints' => [
+          'name' => 'Título',
+          'description' => 'Descrição',
+        ],
     ];

@@ -49,7 +49,8 @@ class UserController extends Controller
     {
         try {
             (new UserRepository)->delete($user);
-            return $this->chooseReturn('success', _m('user.success.destroy'));
+            return $this->chooseReturn('success', _m('user.success.destroy'), 'users.index')
+                ->forceRedirect();
         } catch (\Exception $exception) {
             report($exception);
             return $this->chooseReturn('error', _m('user.error.destroy'));

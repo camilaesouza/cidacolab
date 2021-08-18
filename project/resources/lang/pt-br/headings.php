@@ -12,6 +12,13 @@ return [
         'home' => 'Início',
     ],
 
+    'complaints' => [
+        'index' => 'Denúncias',
+        'show' => 'Ver denúncia',
+        'edit' => 'Editar denúncia',
+        'create' => 'Cadastrar nova denúncia',
+    ],
+
     '_home' => 'Home',
     '_users' => 'Usuários',
 

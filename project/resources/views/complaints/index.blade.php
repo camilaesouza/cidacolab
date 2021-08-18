@@ -28,8 +28,10 @@
                             </div>
 
                             <div class="col-3">
-                                <a :href="'{{ route('users.create') }}'">
-                                    <button class="btn btn-primary btn-block">Novo usuário</button>
+                                <a class="btn btn-primary btn-block"
+                                   :href="'{{ route('complaints.create') }}'">
+                                    <i class="fa fa-search"></i>
+                                    Nova denúncia
                                 </a>
                             </div>
                         </div>

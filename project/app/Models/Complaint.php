@@ -26,4 +26,9 @@ class Complaint extends Model
     protected static $logAttributes = [
         'name',
     ];
+
+    public function address()
+    {
+        return $this->hasOne('App\Models\Address', 'complaint_id', 'id');
+    }
 }
