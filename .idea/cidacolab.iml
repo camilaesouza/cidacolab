@@ -27,6 +27,7 @@
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/guzzlehttp/promises" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/project/vendor/intervention/image" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/laravel/helpers" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/laravel/horizon" />
@@ -34,11 +35,14 @@
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/laravel/ui" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/league/commonmark" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/project/vendor/league/glide" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/league/mime-type-detection" />
+      <excludeFolder url="file://$MODULE_DIR$/project/vendor/maennchen/zipstream-php" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/maximebf/debugbar" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/mockery/mockery" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/project/vendor/myclabs/php-enum" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/nesbot/carbon" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/nunomaduro/collision" />
@@ -84,7 +88,13 @@
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/sebastian/resource-operations" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/sebastian/type" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/project/vendor/spatie/data-transfer-object" />
+      <excludeFolder url="file://$MODULE_DIR$/project/vendor/spatie/image" />
+      <excludeFolder url="file://$MODULE_DIR$/project/vendor/spatie/image-optimizer" />
+      <excludeFolder url="file://$MODULE_DIR$/project/vendor/spatie/laravel-medialibrary" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/spatie/laravel-permission" />
+      <excludeFolder url="file://$MODULE_DIR$/project/vendor/spatie/pdf-to-image" />
+      <excludeFolder url="file://$MODULE_DIR$/project/vendor/spatie/temporary-directory" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/swiftmailer/swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/symfony/console" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/symfony/css-selector" />
@@ -107,6 +117,7 @@
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/symfony/polyfill-php72" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/symfony/polyfill-php73" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/project/vendor/symfony/polyfill-php81" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/symfony/process" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/symfony/routing" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/symfony/service-contracts" />

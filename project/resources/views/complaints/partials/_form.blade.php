@@ -17,3 +17,7 @@
     'registering' => isset($complaint) && $complaint->addresses()->exists() ? 'false' : 'true',
     'prefix' => 'address'
 ])
+
+<div class="form-group mt-3">
+  <input id="attachments" name="attachments[]" type="file" accept=".png, .jpg, .jpeg" multiple>
+</div>

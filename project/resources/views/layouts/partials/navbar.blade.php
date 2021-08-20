@@ -2,6 +2,9 @@
     <li class="nav-item">
         <a class="nav-link" href="{{route('users.index')}}">Usuários</a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('complaints.index')}}">Denúncias</a>
+    </li>
     <li class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ Auth::user()->name }}

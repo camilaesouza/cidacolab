@@ -17,7 +17,7 @@
     <div class="card-body">
         <h3 class="mb-4">@lang('headings.complaints.create')</h3>
 
-        <form class="form-horizontal" method="POST" action="{{ route('complaints.store') }}">
+        <form class="form-horizontal" method="POST" action="{{ route('complaints.store') }}" enctype="multipart/form-data">
             @include('complaints.partials._form')
             <button class="btn btn-primary" type="submit">@lang('links._create')</button>
         </form>

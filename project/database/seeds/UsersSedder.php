@@ -13,9 +13,18 @@ class UsersSedder extends Seeder
     public function run()
     {
         DB::table('users')->insertOrIgnore([
-            'name' => 'Camila Souza',
-            'email' => 'camila@hotmail.com',
-            'password' => bcrypt('12345678'),
+            [
+                'name' => 'Admin Camila',
+                'email' => 'camilaAdmin@hotmail.com',
+                'password' => bcrypt('12345678'),
+                'type' => \App\Enums\UserType::ADMIN,
+            ],
+            [
+                'name' => 'Usuário Camila',
+                'email' => 'camilaUsuario@hotmail.com',
+                'password' => bcrypt('12345678'),
+                'type' => \App\Enums\UserType::USER,
+            ],
         ]);
     }
 }

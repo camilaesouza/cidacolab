@@ -33,6 +33,18 @@
             <dt>Descrição:</dt>
             <dd>{{$complaint->description}}</dd>
 
+            <dt>Anexos:</dt>
+
+            @foreach($complaint->getMedia('media') as $index => $attachment)
+                <div class="attachments mb-5">
+                        {{ $attachment }}
+
+                        <a target="_blank" href="{{ $attachment->getUrl() }}">
+                            {{ $complaint->name}} anexo {{ $index+1 }}
+                        </a>
+                </div>
+            @endforeach
+
             <div class="mt-3">
                 <delete-button class="d-inline" link="{{route('complaints.destroy', $complaint->id)}}">
                     <confirmable
@@ -53,4 +65,18 @@
             </div>
         </div>
     </div>
+
+    <div class="card mt-2">
+        <div class="card-body">
+            <comments
+                :complaint-id="{{ $complaint->id }}">
+            </comments>
+        </div>
+    </div>
 @endsection
+
+<style>
+    .attachments > img {
+        width: 45%;
+    }
+</style>

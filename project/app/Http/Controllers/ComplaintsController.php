@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Actions\Complaints\CreateComplaint;
+use App\Actions\Complaints\DataTransferObject\ComplaintDto;
+use App\Http\Requests\ComplaintCommentRequest;
 use App\Http\Requests\ComplaintRequest;
 use App\Models\Complaint;
-use App\Repositories\AddressRepository;
+use App\Repositories\ComplaintCommentRepository;
 use App\Repositories\ComplaintRepository;
 use App\Http\Resources\Complaint as ComplaintResource;
+use App\Repositories\Criteria\Common\Where;
 
 class ComplaintsController extends Controller
 {
@@ -30,13 +34,9 @@ class ComplaintsController extends Controller
     public function store(ComplaintRequest $request)
     {
         $data = $request->validated();
-        $dataComplaint = $request->only(['name', 'description']);
-        $dataAddress = $data['address'];
+        $dataDto = $this->getComplaintDto($data);
 
-        $complaint = ComplaintRepository::new()->create($dataComplaint);
-
-        $dataAddress['complaint_id'] = $complaint->id;
-        AddressRepository::new()->create($dataAddress);
+        $complaint = CreateComplaint::new()->execute($dataDto);
 
         $message = _m('common.success.create');
         return $this->chooseReturn('success', $message, 'complaints.index');
@@ -65,5 +65,46 @@ class ComplaintsController extends Controller
     public function getComplaintForMap()
     {
         return Complaint::all();
+    }
+
+    public function createComments(ComplaintCommentRequest $request, int $complaintId)
+    {
+        $data = $request->validated();
+
+        $data['complaint_id'] = $complaintId;
+        $comment = ComplaintCommentRepository::new()->create($data);
+
+        $message = _m('common.success.create');
+        $route = route('complaints.show', $complaintId);
+        return $this->chooseReturn('success', $message, $route);
+    }
+
+    public function destroyComments(ComplaintCommentRequest $request)
+    {
+        $data = $request->validated();
+
+        ComplaintCommentRepository::new()->find($data['comment']['id'])->delete();
+
+        $message = _m('common.success.destroy');
+        return $this->chooseReturn('success', $message);
+    }
+
+    public function listComments(int $complaintId)
+    {
+        return ComplaintCommentRepository::new()->pushCriteria([
+           new Where('complaint_id', $complaintId),
+        ])->all();
+    }
+
+    private function getComplaintDto($dataRequest)
+    {
+        $complaintDto = new ComplaintDto([
+            'name' => $dataRequest['name'],
+            'description' => $dataRequest['description'],
+            'address' => $dataRequest['address'],
+            'attachments' => $dataRequest['attachments'],
+        ]);
+
+        return $complaintDto;
     }
 }
