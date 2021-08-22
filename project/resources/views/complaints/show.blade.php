@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('breadcrumb')
-    <breadcrumb header="Visualizar usuário">
+    <breadcrumb header="@lang('headings.complaints.index')">
         <breadcrumb-item href="{{ route('home') }}">
-            @lang('headings._home')
+            @lang('headings.complaints.index')
         </breadcrumb-item>
 
         <breadcrumb-item href="{{ route('complaints.index') }}">
@@ -62,6 +62,18 @@
                         </a>
                     </confirmable>
                 </delete-button>
+
+                @if(!$complaint->is_solved && current_user()->id === $complaint->requester_user_id)
+                    <a class="btn btn-success" href="{{ route('complaints.setIsSolved', [$complaint->id, 'true']) }}">
+                        <i class="fa fa-check"></i>
+                        @lang('labels.complaints.set_is_solved')?
+                    </a>
+                @else
+                    <a class="btn btn-danger" href="{{ route('complaints.setIsSolved', [$complaint->id, 'false']) }}">
+                        <i class="fa fa-check"></i>
+                        @lang('labels.complaints.set_is_unsolved')?
+                    </a>
+                @endif
             </div>
         </div>
     </div>
@@ -69,6 +81,7 @@
     <div class="card mt-2">
         <div class="card-body">
             <comments
+                :is-requester-user="{{ strbool(current_user()->id === $complaint->requester_user_id) }}"
                 :complaint-id="{{ $complaint->id }}">
             </comments>
         </div>

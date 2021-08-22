@@ -3,7 +3,7 @@
 @section('breadcrumb')
     <breadcrumb header="Usuários">
         <breadcrumb-item href="{{ route('home') }}">
-            @lang('headings._home')
+            @lang('headings.complaints.index')
         </breadcrumb-item>
 
         <breadcrumb-item active>
@@ -27,13 +27,15 @@
                                 </filter-text>
                             </div>
 
-                            <div class="col-3">
-                                <a class="btn btn-primary btn-block"
-                                   :href="'{{ route('complaints.create') }}'">
-                                    <i class="fa fa-search"></i>
-                                    Nova denúncia
-                                </a>
-                            </div>
+                            @if(current_user()->type === \App\Enums\UserType::USER)
+                                <div class="col-3">
+                                    <a class="btn btn-primary btn-block"
+                                       :href="'{{ route('complaints.create') }}'">
+                                        <i class="fa fa-search"></i>
+                                        Nova denúncia
+                                    </a>
+                                </div>
+                            @endif
                         </div>
                     </template>
 

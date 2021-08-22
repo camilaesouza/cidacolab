@@ -10,5 +10,7 @@
         'complaints' => [
           'name' => 'Título',
           'description' => 'Descrição',
+          'set_is_solved' => 'Salvar problema resolvido',
+          'set_is_unsolved' => 'Salvar problema como não resolvido',
         ],
     ];

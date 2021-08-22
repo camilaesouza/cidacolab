@@ -20,24 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d0e81b4-060b-496e-b1ed-785b39e2346b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/cidacolab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cidacolab.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/app/Http/Requests/IsSolvedComplaintRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/app/Actions/Complaints/CreateComplaint.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Actions/Complaints/CreateComplaint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/app/Actions/Complaints/DataTransferObject/ComplaintDto.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Actions/Complaints/DataTransferObject/ComplaintDto.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/ComplaintsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Http/Controllers/ComplaintsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Requests/ComplaintRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Http/Requests/ComplaintRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/app/Http/Resources/Complaint.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Http/Resources/Complaint.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/app/Models/Complaint.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Models/Complaint.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/seeds/ComplaintSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/seeds/UpgradeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/database/seeds/UpgradeSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/seeds/UsersSedder.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/database/seeds/UsersSedder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/js/Components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/js/Components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/database/migrations/2021_08_18_001617_create_complaints_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/database/migrations/2021_08_18_001617_create_complaints_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/js/Components/Comments.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/js/Components/Comments.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/lang/pt-br/headings.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/lang/pt-br/headings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/lang/pt-br/labels.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/lang/pt-br/labels.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/resources/views/complaints/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/complaints/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/views/complaints/partials/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/complaints/partials/_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/complaints/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/complaints/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/complaints/map/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/complaints/map/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/complaints/partials/_body.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/complaints/partials/_body.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/complaints/partials/_head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/complaints/partials/_head.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/resources/views/complaints/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/complaints/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/resources/views/layouts/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/layouts/partials/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/users/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/users/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/routes/web/authenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/routes/web/authenticated.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +197,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/project/resources/js/Components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -231,7 +233,8 @@
       <workItem from="1627941373476" duration="9332000" />
       <workItem from="1627991848943" duration="224000" />
       <workItem from="1629241679835" duration="8973000" />
-      <workItem from="1629414114140" duration="10981000" />
+      <workItem from="1629414114140" duration="11068000" />
+      <workItem from="1629660868160" duration="7087000" />
     </task>
     <servers />
   </component>
@@ -259,10 +262,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1627992070431" />
-    <state x="500" y="323" width="356" height="155" key="NewPhpFileDialog" timestamp="1629422713536">
+    <state x="500" y="323" width="356" height="155" key="NewPhpFileDialog" timestamp="1629661181158">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="500" y="323" width="356" height="155" key="NewPhpFileDialog/0.27.1366.741@0.27.1366.741" timestamp="1629422713536" />
+    <state x="500" y="323" width="356" height="155" key="NewPhpFileDialog/0.27.1366.741@0.27.1366.741" timestamp="1629661181158" />
     <state x="100" y="127" width="1166" height="541" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1627748277939">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -275,9 +278,9 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="347" y="174" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1629417184362" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1629422521273">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1629667005255">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1629422521273" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1629667005255" />
   </component>
 </project>

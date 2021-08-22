@@ -17,4 +17,7 @@ class ComplaintDto extends DataTransferObject
 
     /** @var array */
     public $attachments;
+
+    /** @var int */
+    public $requester_id;
 }

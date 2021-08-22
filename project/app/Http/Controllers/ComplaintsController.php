@@ -62,9 +62,11 @@ class ComplaintsController extends Controller
             ->resource(ComplaintResource::class);
     }
 
-    public function getComplaintForMap()
+    public function indexMap()
     {
-        return Complaint::all();
+        $complaints = ComplaintRepository::new()->all();
+
+        return view('complaints.map.index', compact('complaints'));
     }
 
     public function createComments(ComplaintCommentRequest $request, int $complaintId)
@@ -96,6 +98,18 @@ class ComplaintsController extends Controller
         ])->all();
     }
 
+    public function setIsSolved(int $complaintId, string $isSolved)
+    {
+        $complaint = ComplaintRepository::new()->find($complaintId);
+
+        $complaint->is_solved = $isSolved === 'true';
+        $complaint->save();
+
+        $message = _m('common.success.update');
+        $route = route('complaints.show', $complaintId);
+        return $this->chooseReturn('success', $message, $route);
+    }
+
     private function getComplaintDto($dataRequest)
     {
         $complaintDto = new ComplaintDto([
@@ -103,6 +117,7 @@ class ComplaintsController extends Controller
             'description' => $dataRequest['description'],
             'address' => $dataRequest['address'],
             'attachments' => $dataRequest['attachments'],
+            'requester_id' => current_user()->id,
         ]);
 
         return $complaintDto;

@@ -10,6 +10,8 @@ return [
         'name' => 'Nome',
         'description' => 'Descrição',
         'home' => 'Início',
+        'is_solved' => 'Foi resolvido',
+        'created_at' => 'Criado em'
     ],
 
     'complaints' => [
@@ -17,6 +19,7 @@ return [
         'show' => 'Ver denúncia',
         'edit' => 'Editar denúncia',
         'create' => 'Cadastrar nova denúncia',
+        'map' => 'Mapa de denúncias',
     ],
 
     '_home' => 'Home',

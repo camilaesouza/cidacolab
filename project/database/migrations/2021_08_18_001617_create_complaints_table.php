@@ -17,8 +17,10 @@ class CreateComplaintsTable extends Migration
             $table->id();
             $table->string('name');
             $table->text('description');
-            $table->decimal('latitude', 8, 6)->nullable();
-            $table->decimal('longitude', 9, 6)->nullable();
+            $table->boolean('is_solved')->default(false);
+            $table->double('latitude', 10, 8)->nullable();
+            $table->double('longitude', 11, 8)->nullable();
+            $table->foreignId('requester_user_id')->constrained('users');
             $table->timestamps();
         });
     }

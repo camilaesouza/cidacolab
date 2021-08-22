@@ -35,22 +35,24 @@
                     @lang('links._edit')
                 </a>
 
-                <delete-button class="d-inline" link="{{route('users.destroy', $user->id)}}">
-                    <confirmable
-                            class="d-inline"
-                            slot-scope="{handleDelete}"
-                            title="{{$confirmDeleteTitle ?? 'Excluir registro'}}"
-                            message="{{$confirmDeleteMessage ?? 'Tem certeza que deseja apagar este registro?'}}">
-                        <a
-                                slot-scope="{confirm}"
-                                @click="confirm($event, handleDelete)">
-                            <button type="button" class="btn btn-danger">
-                                <i class="fa fa-plus"></i>
-                                @lang('links._destroy')
-                            </button>
-                        </a>
-                    </confirmable>
-                </delete-button>
+                @if(current_user()->type === \App\Enums\UserType::ADMIN)
+                    <delete-button class="d-inline" link="{{route('users.destroy', $user->id)}}">
+                        <confirmable
+                                class="d-inline"
+                                slot-scope="{handleDelete}"
+                                title="{{$confirmDeleteTitle ?? 'Excluir registro'}}"
+                                message="{{$confirmDeleteMessage ?? 'Tem certeza que deseja apagar este registro?'}}">
+                            <a
+                                    slot-scope="{confirm}"
+                                    @click="confirm($event, handleDelete)">
+                                <button type="button" class="btn btn-danger">
+                                    <i class="fa fa-plus"></i>
+                                    @lang('links._destroy')
+                                </button>
+                            </a>
+                        </confirmable>
+                    </delete-button>
+                @endif
             </div>
         </div>
     </div>

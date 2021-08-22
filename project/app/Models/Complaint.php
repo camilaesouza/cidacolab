@@ -21,17 +21,29 @@ class Complaint extends Model implements HasMedia
     protected $fillable = [
         'name',
         'description',
+        'is_solved',
         'address',
         'longitude',
         'latitude',
+        'requester_user_id'
     ];
 
     protected static $logAttributes = [
         'name',
     ];
 
+    protected $casts = [
+      'latitude' => 'double',
+      'longitude' => 'double',
+    ];
+
     public function address()
     {
         return $this->hasOne('App\Models\Address', 'complaint_id', 'id');
+    }
+
+    public function requesterUser()
+    {
+        return $this->hasOne('App\Models\User', 'id', 'requester_user_id');
     }
 }

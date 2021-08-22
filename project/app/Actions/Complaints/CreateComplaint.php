@@ -22,6 +22,7 @@ class CreateComplaint
         $complaint = ComplaintRepository::new()->create([
             'name' => $complaintDto->name,
             'description' => $complaintDto->description,
+            'requester_user_id' => $complaintDto->requester_id,
         ]);
 
         $this->createAddressForComplaint($complaintDto, $complaint->id);

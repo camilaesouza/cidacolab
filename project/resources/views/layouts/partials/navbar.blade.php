@@ -5,6 +5,9 @@
     <li class="nav-item">
         <a class="nav-link" href="{{route('complaints.index')}}">Denúncias</a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('complaints.map')}}">Mapa de denúncias</a>
+    </li>
     <li class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ Auth::user()->name }}
@@ -12,6 +15,9 @@
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
             <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                 Logout
+            </a>
+            <a href="{{ route('users.show', current_user()->id) }}" class="dropdown-item">
+                Ver perfil
             </a>
 
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -22,6 +28,9 @@
 @else
     <li class="nav-item">
         <a class="nav-link" href="{{route('complaints.index')}}">Denúncias</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('complaints.map')}}">Mapa de denúncias</a>
     </li>
     <li class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

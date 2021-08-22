@@ -3,7 +3,7 @@
 @section('breadcrumb')
 <breadcrumb header="Criar usuário">
     <breadcrumb-item href="{{ route('home') }}">
-        @lang('headings._home')
+        @lang('headings.complaints.index')
     </breadcrumb-item>
 
     <breadcrumb-item active>

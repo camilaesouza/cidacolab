@@ -25,7 +25,7 @@
                   :value="item.comment"
                   disabled>
         </textarea>
-        <button @click="deleteComment(item)" class="btn btn-danger">Deletar</button>
+        <button v-if="isRequesterUser" @click="deleteComment(item)" class="btn btn-danger">Deletar</button>
       </div>
     </div>
 
@@ -77,6 +77,7 @@ export default {
 
   props: {
     complaintId: Number,
+    isRequesterUser: Boolean,
   },
 
   data() {
