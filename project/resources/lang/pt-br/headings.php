@@ -11,7 +11,12 @@ return [
         'description' => 'Descrição',
         'home' => 'Início',
         'is_solved' => 'Foi resolvido',
-        'created_at' => 'Criado em'
+        'created_at' => 'Criado em',
+        'logout' => 'Sair',
+        'profile' => 'Ver perfil',
+        'email' => 'e-mail',
+        'password' => 'Senha',
+        'confirm_password' => 'Confirmar senha',
     ],
 
     'complaints' => [
