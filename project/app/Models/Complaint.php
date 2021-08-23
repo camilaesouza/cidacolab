@@ -22,7 +22,6 @@ class Complaint extends Model implements HasMedia
         'name',
         'description',
         'is_solved',
-        'address',
         'longitude',
         'latitude',
         'requester_user_id'

@@ -1,6 +1,6 @@
 # README #
 
-Esta é a base de projetos Laravel utilizada na Lets.
+Esta é um projeto de um sistema web para fins academicos.
 
 ## Utilizando o projeto pelo docker
 
@@ -42,3 +42,14 @@ Para aprender a configurar o projeto ná própria máquina, leia o documento [Se
 
 ## LICENÇA
 Licença MIT (MIT). Por favor, leia o [Arquivo de Licença](LICENSE) para mais informações.
+
+#### Sobre o projeto
+Para acessar a plataforma temos dois usuários pré definidos
+
+Usuário admin: 
+    Login: admin@hotmail.com
+    Senha: 12345678
+    
+Usuário normal:
+    Login: usuario@hotmail.com
+    Senha: 12345678

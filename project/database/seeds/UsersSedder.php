@@ -14,14 +14,14 @@ class UsersSedder extends Seeder
     {
         DB::table('users')->insertOrIgnore([
             [
-                'name' => 'Admin Camila',
-                'email' => 'camilaAdmin@hotmail.com',
+                'name' => 'Admin',
+                'email' => 'admin@hotmail.com',
                 'password' => bcrypt('12345678'),
                 'type' => \App\Enums\UserType::ADMIN,
             ],
             [
-                'name' => 'Usuário Camila',
-                'email' => 'camilaUsuario@hotmail.com',
+                'name' => 'Usuário',
+                'email' => 'usuario@hotmail.com',
                 'password' => bcrypt('12345678'),
                 'type' => \App\Enums\UserType::USER,
             ],
