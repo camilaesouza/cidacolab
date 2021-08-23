@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('breadcrumb')
-<breadcrumb header="Criar usuário">
+<breadcrumb header="@lang('headings.complaints.create')">
     <breadcrumb-item href="{{ route('home') }}">
         @lang('headings.complaints.index')
     </breadcrumb-item>

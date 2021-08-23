@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('breadcrumb')
-    <breadcrumb header="@lang('headings.complaints.index')">
+    <breadcrumb header="@lang('headings.complaints.show')">
         <breadcrumb-item href="{{ route('home') }}">
             @lang('headings.complaints.index')
         </breadcrumb-item>

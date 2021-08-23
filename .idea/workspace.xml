@@ -21,12 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7d0e81b4-060b-496e-b1ed-785b39e2346b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Enums/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Enums/UserType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Models/Complaint.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Models/Complaint.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/seeds/UpgradeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/database/seeds/UpgradeSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/seeds/UsersSedder.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/database/seeds/UsersSedder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/complaints/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/complaints/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/complaints/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/complaints/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/complaints/map/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/complaints/map/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/complaints/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/complaints/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +220,7 @@
       <workItem from="1629414114140" duration="11068000" />
       <workItem from="1629660868160" duration="13221000" />
       <workItem from="1629755150716" duration="90000" />
-      <workItem from="1629755484683" duration="952000" />
+      <workItem from="1629755484683" duration="1667000" />
     </task>
     <servers />
   </component>

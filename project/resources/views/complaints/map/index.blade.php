@@ -1,13 +1,9 @@
 @extends('layouts.app')
 
 @section('breadcrumb')
-    <breadcrumb header="Usuários">
+    <breadcrumb header="@lang('headings.complaints.map')">
         <breadcrumb-item href="{{ route('home') }}">
             @lang('headings.complaints.map')
-        </breadcrumb-item>
-
-        <breadcrumb-item active>
-            @lang('headings.users.index')
         </breadcrumb-item>
     </breadcrumb>
 @endsection
