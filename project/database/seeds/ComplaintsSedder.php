@@ -20,6 +20,8 @@ class ComplaintsSedder extends Seeder
                 'latitude' => -25.4060677,
                 'longitude' => -51.488928517,
                 'requester_user_id' => \App\Repositories\UserRepository::new()->first()->id,
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
         ]);
 
@@ -34,6 +36,8 @@ class ComplaintsSedder extends Seeder
                 'district' => 'Boqueirão',
                 'cep' => '85020-400',
                 'complaint_id' => \App\Repositories\ComplaintRepository::new()->first()->id,
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
         ]);
 
