@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7d0e81b4-060b-496e-b1ed-785b39e2346b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/seeds/ComplaintsSedder.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/database/seeds/ComplaintsSedder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/complaints/partials/_body.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/complaints/partials/_body.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +219,7 @@
       <workItem from="1629755150716" duration="90000" />
       <workItem from="1629755484683" duration="2284000" />
       <workItem from="1629806537291" duration="18000" />
-      <workItem from="1629839959548" duration="235000" />
+      <workItem from="1629839959548" duration="446000" />
     </task>
     <servers />
   </component>
